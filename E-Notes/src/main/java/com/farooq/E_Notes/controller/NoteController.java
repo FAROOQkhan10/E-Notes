@@ -1,7 +1,7 @@
 package com.farooq.E_Notes.controller;
 
 import com.farooq.E_Notes.model.Note;
-import com.farooq.E_Notes.model.dto.NoteRequest;
+import com.farooq.E_Notes.services.INoteService;
 import com.farooq.E_Notes.services.NoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,7 +16,7 @@ import java.util.Optional;
 public class NoteController {
 
     @Autowired
-    private NoteService _noteService;
+    private INoteService _noteService;
 
     @GetMapping
     public ResponseEntity<Optional<List<Note>>> getAll(){

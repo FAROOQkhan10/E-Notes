@@ -1,7 +1,6 @@
 package com.farooq.E_Notes.model;
 
 
-import com.farooq.E_Notes.model.dto.NoteRequest;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,8 +13,8 @@ public class Note {
 
      @Id
      @GeneratedValue(strategy = GenerationType.UUID)
-     public String id;
-     public String name;
-     public String description;
+     private String id;
+     private String name;
+     private String description;
 
 }

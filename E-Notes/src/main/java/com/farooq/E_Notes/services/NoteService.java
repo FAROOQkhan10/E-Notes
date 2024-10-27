@@ -1,8 +1,6 @@
 package com.farooq.E_Notes.services;
 
 import com.farooq.E_Notes.model.Note;
-import com.farooq.E_Notes.model.dto.NoteRequest;
-import com.farooq.E_Notes.model.dto.NoteResponse;
 import com.farooq.E_Notes.repository.NoteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class NoteService {
+public class NoteService implements INoteService{
 
     @Autowired
     private NoteRepository _noteRepository;
